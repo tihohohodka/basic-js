@@ -19,7 +19,7 @@ class myError extends Error {
 function getSeason(date=1) {
 
 if ((!(date instanceof Date))||isNaN(date)||(Object.prototype.toString.call(date) !== "[object Date]")){throw new myError("Invalid date!") }
-if ((!(date instanceof Date))||(date===1)||(typeof date === 'undefined')||(typeof date === 'null')){ return 'Unable to determine the time of year!'};
+if ((!(date instanceof Date))||(date===1)||(typeof date == 'undefined')||(typeof date == 'null')){ return 'Unable to determine the time of year!'};
 
 
 if (date.getMonth()>=0&&date.getMonth()<=1||date.getMonth()===11){
