@@ -21,10 +21,10 @@ for (i=0;i<=members.length-1;i++)
     
     if (typeof(members[i])=='string'){
       for (j=0;j<=members[i].length;j++){
-        if (members[i][j]!==' '){
-          members[i][0]=members[i][0].toUpperCase();
-          name.push(members[i][0].toUpperCase());
-          j=members.length;
+        if (members[i][j]!=' '){
+          members[i][j]=members[i][j].toUpperCase();
+          name.push(members[i][j].toUpperCase());
+          j=members[i].length;
         }
       }
      
